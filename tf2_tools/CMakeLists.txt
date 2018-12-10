@@ -11,6 +11,8 @@ catkin_package(
                   tf2_msgs
                   tf2_ros)
 
-install(PROGRAMS scripts/view_frames.py scripts/echo.py
-        DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+catkin_install_python(PROGRAMS 
+  scripts/view_frames.py 
+  scripts/echo.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
